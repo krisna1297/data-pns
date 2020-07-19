@@ -1,0 +1,15 @@
+---
+layout: default
+title: Data PNS
+---
+
+<h2>Data PNS</h2>
+
+<!-- Golongan -->
+{% assign golongan = site.data.golongan %}
+
+<ul>
+    {% for row in golongan %}
+    <li>{{ row.Pangkat }} ({{ row.Golongan }}) - {{ row.TMT }}</li>
+    {% endfor %}
+</ul>
